@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+# Update the package list and install Nginx
+apt-get update
+apt-get install -y nginx
+
+# Configure Nginx to display "Holberton School" at the root URL
+echo "Holberton School for the win!" > /var/www/html/index.html
+
+# Restart Nginx to apply the changes
+# Since we can't use systemctl, we use service
+service nginx restart
