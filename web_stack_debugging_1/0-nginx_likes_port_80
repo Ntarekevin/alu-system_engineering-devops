@@ -1,5 +1,5 @@
 #!/usr/bin/env bash 
-"""Debuging the error"""
+#Debuging the error
 rm /etc/nginx/sites-enabled/default
 cd /etc/nginx/sites-enabled/
 ln -s ../sites-available/default .
